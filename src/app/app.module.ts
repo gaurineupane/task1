@@ -10,6 +10,7 @@ import { PostApiComponent } from './post-api/post-api.component';
 import { HomeComponent } from './home/home.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { PutApiComponent } from './put-api/put-api.component';
+import { LearnComponent } from './learn/learn.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { PutApiComponent } from './put-api/put-api.component';
      PostApiComponent,
      HomeComponent,
      PutApiComponent,
+     LearnComponent,
 
 
   ],

@@ -1,0 +1,46 @@
+<table border="1">
+  <tr>
+    <td>User Id</td>
+    <td>Id</td>
+    <td>title</td>
+    <td>completed</td>
+
+  </tr>
+
+  <ng-container>
+    <tr *ngFor="let item of allData">
+      <td>{{item.userId}}</td>
+      <td>{{item.id}}</td>
+      <td>{{item.title}}</td>
+      <td>{{item.completed}}</td>
+      <td><button class="btn btn-success" (click)="getById(item.id)">Get</button></td>
+      <td><button class="btn btn-success" (click)="edit(item.id)">Click Here To Edit</button></td>
+      <td><button class="btn btn-success" (click)="delete(item.id)">Click Here To Delete</button></td>
+
+
+    </tr>
+  </ng-container>
+
+</table>
+<br><br>
+
+<table border="1">
+  <tr>
+    <td> Id</td>
+    <td>Employee Name</td>
+    <td>Employee Salary</td>
+    <td>Employee Age</td>
+    <td>Profile Image</td>
+  </tr>
+
+  <tr >
+    <td>{{partData?.id}}</td>
+    <td>{{partData?.employee_name}}</td>
+    <td>{{partData?.employee_salary}}</td>
+    <td>{{partData?.employee_age}}</td>
+    <td>{{partData?.profile_image}}</td>
+  </tr>
+
+</table>
+
+

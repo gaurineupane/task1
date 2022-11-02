@@ -1,0 +1,23 @@
+<form [formGroup]='rForm'>
+
+  <div class="form-group">
+    <label>User Id</label>
+  <input type="text" formControlName="uid" placeholder="Enter id">
+  <br><br>
+
+  <label>Id</label>
+  <input type="text" formControlName="id" placeholder="Enter Email">
+  <br><br>
+
+  <label>Title</label>
+  <input type="text" formControlName="title" placeholder="Enter Title">
+
+  <br><br>
+    <label>Completed</label>
+    <input type="text" formControlName="completed" placeholder="">
+<br>
+<br>
+  </div>
+
+  <button (click)="submit()">Add new user</button>
+</form>
